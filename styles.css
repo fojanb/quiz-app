@@ -1,7 +1,7 @@
 :root {
-  --clr-font: #F2E9E4;
-  --clr-bg: #4A4E69;
-  --clr-card:#9A8C98;
+  --clr-font: #f2e9e4;
+  --clr-bg: #4a4e69;
+  --clr-card: #9a8c98;
 }
 
 body {
@@ -10,24 +10,56 @@ body {
   background-color: var(--clr-bg);
   color: var(--clr-font);
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.184c.13.357.264.72.402 1.088l.661 1.768C4.653 33.64 6 39.647 6 50c0 10.271-1.222 15.362-4.928 24.629-.383.955-.74 1.869-1.072 2.75v6.225c.73-2.51 1.691-5.139 2.928-8.233C6.722 65.888 8 60.562 8 50c0-10.626-1.397-16.855-5.063-26.66l-.662-1.767C1.352 19.098.601 16.913 0 14.85v6.335zm20 0C17.108 13.258 16 8.077 16 0h2c0 5.744.574 9.951 2 14.85v6.334zm0 56.195c-2.966 7.86-4 13.123-4 22.621h2c0-6.842.542-11.386 2-16.396v-6.225zM6 0c0 8.44 1.21 13.718 4.402 22.272l.661 1.768C14.653 33.64 16 39.647 16 50c0 10.271-1.222 15.362-4.928 24.629C7.278 84.112 6 89.438 6 100h2c0-10.271 1.222-15.362 4.928-24.629C16.722 65.888 18 60.562 18 50c0-10.626-1.397-16.855-5.063-26.66l-.662-1.767C9.16 13.223 8 8.163 8 0H6z' fill='%23fff' fill-rule='nonzero' fill-opacity='.1' opacity='.349'/%3E%3C/svg%3E%0A");
-
 }
-.wrapper{
-    display: grid;
-    grid-template-columns: 1fr,auto;
-    background-color: var(--clr-card);
-    width: 30%;
-    margin: 50px auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    padding: 100px;
+.wrapper {
+  display: none;
+  grid-template-columns: 1fr, auto;
+  background-color: var(--clr-card);
+  width: 30%;
+  margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 100px;
 }
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 50px auto;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px auto;
+}
+#nextBtn {
+  display: none;
+}
+#startBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  outline: none;
+  appearance: none;
+  background: none;
+  border: none;
+  background-color: var(--clr-card);
+  color: var(--clr-font);
+  cursor: pointer;
+}
+#startBtn:hover{
+    background-color: var(--clr-font);
+    color:var(--clr-card);
 }
