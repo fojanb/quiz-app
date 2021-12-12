@@ -82,6 +82,7 @@ body {
   margin: 0 auto;
   width: 50px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 .option:hover {
   background-color: var(--clr-option);
