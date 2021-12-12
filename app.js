@@ -23,7 +23,7 @@ fetch(tools.endpoint)
             `<div class="card" id=${question.id}>
             <div class="question">${question.question}</div>
             <div class="options">
-                <div class="option" id=${question.answer.id}>${question.answer.value}</div>
+                <div class="option" id=${question.option4.id}>${question.option4.value}</div>
                 <div class="option" id=${question.option1.id}>${question.option1.value}</div>
                 <div class="option" id=${question.option2.id}>${question.option2.value}</div>
                 <div class="option" id=${question.option3.id}>${question.option3.value}</div>

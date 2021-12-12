@@ -2,23 +2,23 @@
   "questions": [
     {
       "question": "Where is the capital of Canada?",
-      "answer": { "value": "Ottawa", "id": "0" },
+      "option3": { "value": "Ottawa", "id": "0" },
       "option1": { "value": "Abadan", "id": "1" },
       "option2": { "value": "Alaska", "id": "2" },
-      "option3": { "value": "Shiraz", "id": "3" },
+      "option4": { "value": "Shiraz", "id": "3" },
       "id": "Math.floor(Math.random() * 16777215).toString(16)"
     },
     {
       "question": "What is the result of (-1)^0?",
-      "answer": { "value": "1", "id": "4" },
+      "option2": { "value": "1", "id": "4" },
       "option1": { "value": "0", "id": "5" },
-      "option2": { "value": "-1", "id": "6" },
+      "option4": { "value": "-1", "id": "6" },
       "option3": { "value": "Infinity", "id": "7" },
       "id": "Math.floor(Math.random() * 16777215).toString(16)"
     },
     {
       "question": "What is the Canada popular word?",
-      "answer": { "value": "Eh", "id": "12" },
+      "option4": { "value": "Eh", "id": "12" },
       "option1": { "value": "he", "id": "13" },
       "option2": { "value": "heh", "id": "14" },
       "option3": { "value": "ehe", "id": "15" },
@@ -26,15 +26,15 @@
     },
     {
       "question": "What is the capital of Brazil?",
-      "answer": { "value": "Brazil", "id": "16" },
-      "option1": { "value": "Arizona", "id": "17" },
+      "option1": { "value": "Brazil", "id": "16" },
+      "option4": { "value": "Arizona", "id": "17" },
       "option2": { "value": "Ohio", "id": "18" },
       "option3": { "value": "LA", "id": "19" },
       "id": "Math.floor(Math.random() * 16777215).toString(16)"
     },
     {
       "question": "Where is the capital of Iran?",
-      "answer": { "value": "Tehran", "id": "20" },
+      "option4": { "value": "Tehran", "id": "20" },
       "option1": { "value": "Amol", "id": "21" },
       "option2": { "value": "Isfahan", "id": "22" },
       "option3": { "value": "Ankara", "id": "23" },
