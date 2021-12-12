@@ -3,6 +3,7 @@
   --clr-bg: #064552;
   --clr-card: #cdd2d1;
   --clr-start: #1a6b75;
+  --clr-option:#f4a261;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
   display: none;
   grid-template-columns: 1fr, auto;
   background-color: var(--clr-card);
-  width: 30%;
+  width: 50%;
   margin: 50px auto;
   justify-content: center;
   align-items: center;
@@ -33,6 +34,16 @@ body {
   color: var(--clr-bg);
   font-size: 1.2rem;
   font-weight: bold;
+
+}
+.card{
+  display: grid;
+  grid-template-columns: repeat(1,700px);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 150px;
 }
 .question {
   display: flex;
@@ -41,7 +52,7 @@ body {
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   font-size: 1.7rem;
 }
 .options {
@@ -55,12 +66,18 @@ body {
 }
 .option {
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   border: 2px solid var(--clr-bg);
-  padding: 20px 100px;
+  padding: 20px 50px;
+  margin: 0 auto;
+  width: 50px;
+  cursor: pointer;
+}
+.option:hover{
+  background-color: var(--clr-option);
+  transform: scale(1.1);
 }
 
 #nextBtn {
@@ -98,5 +115,11 @@ body {
   background-color: var(--clr-start);
   color: var(--clr-font);
   cursor: pointer;
+}
+@media  screen and (max-width:930px) {
+  .options{
+    grid-template-columns: repeat(1, 300px);
+  }
+  
 }
 

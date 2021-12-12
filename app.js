@@ -1,42 +1,42 @@
 const questions = [
   {
     question: "where is the capital of Canada?",
-    answer: "Ottawa",
-    op1: "Tehran",
-    op2: "Abadan",
-    op3: "Ankara",
+    answer: { value: "Ottawa", id: "0" },
+    op1: { value: "Abadan", id: "1" },
+    op2: { value: "Alaska", id: "2" },
+    op3: { value: "Shiraz", id: "3" },
     id: Math.floor(Math.random() * 16777215).toString(16),
   },
   {
     question: "What is the result of (-1)^0?",
-    answer: "1",
-    op1: "0",
-    op2: "-1",
-    op3: "Infinity",
+    answer: { value: "1", id: "4" },
+    op1: { value: "0", id: "5" },
+    op2: { value: "-1", id: "6" },
+    op3: { value: "Infinity", id: "7" },
     id: Math.floor(Math.random() * 16777215).toString(16),
   },
   {
     question: "What is the Canada popular word?",
-    answer: "Eh",
-    op1: "heh",
-    op2: "ehe",
-    op3: "heheheh",
+    answer: { value: "Eh", id: "12" },
+    op1: { value: "he", id: "13" },
+    op2: { value: "heh", id: "14" },
+    op3: { value: "ehe", id: "15" },
     id: Math.floor(Math.random() * 16777215).toString(16),
   },
   {
     question: "What is the capital of Brazil?",
-    answer: "Brazil",
-    op1: "Abadan",
-    op2: "Ahvaz",
-    op3: "Vancouver",
+    answer: { value: "Brazil", id: "16" },
+    op1: { value: "Arizona", id: "17" },
+    op2: { value: "Ohio", id: "18" },
+    op3: { value: "LA", id: "19" },
     id: Math.floor(Math.random() * 16777215).toString(16),
   },
   {
     question: "Where is the capital of Iran?",
-    answer: "Tehran",
-    op1: "Ahvaz",
-    op2: "Amol",
-    op3: "Arizona",
+    answer: { value: "Tehran", id: "20" },
+    op1: { value: "Amol", id: "21" },
+    op2: { value: "Isfahan", id: "22" },
+    op3: { value: "Ankara", id: "23" },
     id: Math.floor(Math.random() * 16777215).toString(16),
   },
 ];
@@ -50,12 +50,14 @@ tools.start.addEventListener("click", () => {
   tools.wrapper.style.display = "grid";
   tools.wrapper.innerHTML = questions.map(
     (question) =>
-      `<div class="question">${question.question}</div>
-      <div class="options">
-          <div class="option" id="option-1">${question.answer}</div>
-          <div class="option" id="option-2">${question.op1}</div>
-          <div class="option" id="option-3">${question.op2}</div>
-          <div class="option" id="option-4">${question.op3}</div>
-      </div>`
-  );
+      `<div class="card">
+          <div class="question" id=${question.id}>${question.question}</div>
+          <div class="options">
+              <div class="option" id=${question.answer.id}>${question.answer.value}</div>
+              <div class="option" id=${question.op1.id}>${question.op1.value}</div>
+              <div class="option" id=${question.op2.id}>${question.op2.value}</div>
+              <div class="option" id=${question.op3.id}>${question.op3.value}</div>
+          </div>
+       </div>`
+  ).join('');
 });
