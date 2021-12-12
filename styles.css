@@ -5,7 +5,6 @@
   --clr-start: #1a6b75;
   --clr-option: #da9359;
 }
-
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -42,7 +41,6 @@ body {
   padding: 100px;
   color: var(--clr-bg);
   font-size: 1.2rem;
-  font-weight: bold;
 }
 .card {
   display: grid;
@@ -81,7 +79,7 @@ body {
   text-align: center;
   border: 2px solid var(--clr-bg);
   border-radius: 10px;
-  padding: 20px 50px;
+  padding: 10px 40px;
   margin: 0 auto;
   width: 50px;
   cursor: pointer;
@@ -91,15 +89,14 @@ body {
   transform: scale(1.05);
   transition: 0.2s ease-in-out;
 }
-#nextBtn {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 10px 40px;
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 10px;
   outline: none;
   appearance: none;
@@ -109,24 +106,7 @@ body {
   color: var(--clr-font);
   cursor: pointer;
 }
-#startBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 20px auto;
-  padding: 20px 100px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  outline: none;
-  appearance: none;
-  background: none;
-  border: none;
-  background-color: var(--clr-start);
-  color: var(--clr-font);
-  cursor: pointer;
-}
+
 @media screen and (max-width: 930px) {
   .options {
     grid-template-columns: repeat(1, 300px);

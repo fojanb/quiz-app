@@ -28,6 +28,7 @@ fetch(tools.endpoint)
                 <div class="option" id=${question.option2.id}>${question.option2.value}</div>
                 <div class="option" id=${question.option3.id}>${question.option3.value}</div>
             </div>
+            <button class="btn" id="nextBtn">Next&nbsp;→</button>
          </div>`
         )
         .join("");
