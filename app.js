@@ -24,9 +24,9 @@ fetch(tools.endpoint)
             <div class="question">${question.question}</div>
             <div class="options">
                 <div class="option" id=${question.answer.id}>${question.answer.value}</div>
-                <div class="option" id=${question.op1.id}>${question.op1.value}</div>
-                <div class="option" id=${question.op2.id}>${question.op2.value}</div>
-                <div class="option" id=${question.op3.id}>${question.op3.value}</div>
+                <div class="option" id=${question.option1.id}>${question.option1.value}</div>
+                <div class="option" id=${question.option2.id}>${question.option2.value}</div>
+                <div class="option" id=${question.option3.id}>${question.option3.value}</div>
             </div>
          </div>`
         )
