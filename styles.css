@@ -3,7 +3,7 @@
   --clr-bg: #064552;
   --clr-card: #cdd2d1;
   --clr-start: #1a6b75;
-  --clr-option:#f4a261;
+  --clr-option: #da9359;
 }
 
 body {
@@ -34,11 +34,10 @@ body {
   color: var(--clr-bg);
   font-size: 1.2rem;
   font-weight: bold;
-
 }
-.card{
+.card {
   display: grid;
-  grid-template-columns: repeat(1,700px);
+  grid-template-columns: repeat(1, 700px);
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -70,16 +69,17 @@ body {
   align-items: center;
   text-align: center;
   border: 2px solid var(--clr-bg);
+  border-radius: 10px;
   padding: 20px 50px;
   margin: 0 auto;
   width: 50px;
   cursor: pointer;
 }
-.option:hover{
+.option:hover {
   background-color: var(--clr-option);
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
 }
-
 #nextBtn {
   display: flex;
   justify-content: center;
@@ -116,10 +116,9 @@ body {
   color: var(--clr-font);
   cursor: pointer;
 }
-@media  screen and (max-width:930px) {
-  .options{
+@media screen and (max-width: 930px) {
+  .options {
     grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(4, 100px);
   }
-  
 }
-

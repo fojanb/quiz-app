@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "where is the capital of Canada?",
+    question: "Where is the capital of Canada?",
     answer: { value: "Ottawa", id: "0" },
     op1: { value: "Abadan", id: "1" },
     op2: { value: "Alaska", id: "2" },
@@ -50,8 +50,8 @@ tools.start.addEventListener("click", () => {
   tools.wrapper.style.display = "grid";
   tools.wrapper.innerHTML = questions.map(
     (question) =>
-      `<div class="card">
-          <div class="question" id=${question.id}>${question.question}</div>
+      `<div class="card" id=${question.id}>
+          <div class="question">${question.question}</div>
           <div class="options">
               <div class="option" id=${question.answer.id}>${question.answer.value}</div>
               <div class="option" id=${question.op1.id}>${question.op1.value}</div>
