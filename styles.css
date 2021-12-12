@@ -1,8 +1,8 @@
 :root {
   --clr-font: #f2e9e4;
-  --clr-bg: #4a4e69;
-  --clr-card: #9a8c98;
-  --clr-start: #8ecae6;
+  --clr-bg: #064552;
+  --clr-card: #cdd2d1;
+  --clr-start: #1a6b75;
 }
 
 body {
@@ -78,7 +78,7 @@ body {
   background: none;
   border: none;
   background-color: var(--clr-start);
-  color: var(--clr-bg);
+  color: var(--clr-font);
   cursor: pointer;
 }
 #startBtn {
@@ -96,10 +96,7 @@ body {
   background: none;
   border: none;
   background-color: var(--clr-start);
-  color: var(--clr-bg);
+  color: var(--clr-font);
   cursor: pointer;
 }
-#startBtn:hover {
-  background-color: var(--clr-font);
-  color: var(--clr-card);
-}
+

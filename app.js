@@ -1,6 +1,6 @@
 const questions = [
   {
-    Q: "What is the capital of Canada?",
+    Q: "where is the capital of Canada?",
     A: "Manitoba",
     op1: "Tehran",
     op2: "Abadan",
@@ -32,7 +32,7 @@ const questions = [
     id: Math.floor(Math.random() * 16777215).toString(16),
   },
   {
-    Q: "What is the capital of Iran?",
+    Q: "Where is the capital of Iran?",
     A: "Tehran",
     op1: "Ahvaz",
     op2: "Amol",
