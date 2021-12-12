@@ -41,16 +41,19 @@ const questions = [
   },
 ];
 const tools = {
+  home: document.querySelector(".home"),
   wrapper: document.querySelector(".wrapper"),
   options: document.querySelector(".options"),
   start: document.querySelector("#startBtn"),
 };
 
 tools.start.addEventListener("click", () => {
+  tools.home.style.display = "none";
   tools.wrapper.style.display = "grid";
-  tools.wrapper.innerHTML = questions.map(
-    (question) =>
-      `<div class="card" id=${question.id}>
+  tools.wrapper.innerHTML = questions
+    .map(
+      (question) =>
+        `<div class="card" id=${question.id}>
           <div class="question">${question.question}</div>
           <div class="options">
               <div class="option" id=${question.answer.id}>${question.answer.value}</div>
@@ -59,5 +62,6 @@ tools.start.addEventListener("click", () => {
               <div class="option" id=${question.op3.id}>${question.op3.value}</div>
           </div>
        </div>`
-  ).join('');
+    )
+    .join("");
 });
