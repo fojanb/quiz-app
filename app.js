@@ -31,6 +31,11 @@ fetch(tools.endpoint)
          </div>`
         )
         .join("");
+      tools.wrapper
+        .querySelectorAll(".option")
+        .forEach((option) =>
+          option.addEventListener("click", () => console.log(option.id))
+        );
     });
   })
   .catch(handleError);
