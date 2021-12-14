@@ -16,7 +16,6 @@ fetch(tools.endpoint)
   .then((questions) => {
     tools.start.addEventListener("click", () => {
       tools.home.style.display = "none";
-      tools.wrapper.style.display = "grid";
       tools.wrapper.innerHTML = questions.questions
         .map(
           (question) =>
@@ -28,10 +27,34 @@ fetch(tools.endpoint)
                 <div class="option" id=${question.option2.id}>${question.option2.value}</div>
                 <div class="option" id=${question.option3.id}>${question.option3.value}</div>
             </div>
-            <button class="btn" id="nextBtn">Next&nbsp;→</button>
+            <div class="controls">
+                <button class="btn" id="prevBtn">←&nbsp;Prev</button>
+                <button class="btn" id="nextBtn">Next&nbsp;→</button>
+            </div>
          </div>`
         )
         .join("");
+      let current = tools.wrapper.firstElementChild;
+      let prev =
+        current.previousElementSibling || tools.wrapper.lastElementChild;
+      let next = current.nextElementSibling;
+      current.classList.add("current");
+      prev.classList.add("prev");
+      next.classList.add("next");
+      function move(forward) {
+        if (forward === "forward") {
+          console.log("Next card");
+          current.classList.remove("current")
+          next.classList.remove("next");
+          next.classList.add("current")
+          current = next;
+          console.log(current)
+        }
+      }
+      tools.wrapper
+        .querySelector(".card.current")
+        .querySelector("#nextBtn")
+        .addEventListener("click", () => move("forward"));
       tools.wrapper
         .querySelectorAll(".option")
         .forEach((option) =>

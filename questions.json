@@ -2,43 +2,43 @@
   "questions": [
     {
       "question": "Where is the capital of Canada?",
-      "option3": { "value": "Ottawa", "id": "0" },
-      "option1": { "value": "Abadan", "id": "1" },
-      "option2": { "value": "Alaska", "id": "2" },
-      "option4": { "value": "Shiraz", "id": "3" },
-      "id": "Math.floor(Math.random() * 16777215).toString(16)"
+      "option3": { "value": "Ottawa", "id": "00" },
+      "option1": { "value": "Abadan", "id": "01" },
+      "option2": { "value": "Alaska", "id": "02" },
+      "option4": { "value": "Shiraz", "id": "03" },
+      "id": "0"
     },
     {
       "question": "What is the result of (-1)^0?",
-      "option2": { "value": "1", "id": "4" },
-      "option1": { "value": "0", "id": "5" },
-      "option4": { "value": "-1", "id": "6" },
-      "option3": { "value": "Infinity", "id": "7" },
-      "id": "Math.floor(Math.random() * 16777215).toString(16)"
+      "option2": { "value": "1", "id": "10" },
+      "option1": { "value": "0", "id": "11" },
+      "option4": { "value": "-1", "id": "12" },
+      "option3": { "value": "Infinity", "id": "13" },
+      "id": "1"
     },
     {
       "question": "What is the Canada popular word?",
-      "option4": { "value": "Eh", "id": "12" },
-      "option1": { "value": "he", "id": "13" },
-      "option2": { "value": "heh", "id": "14" },
-      "option3": { "value": "ehe", "id": "15" },
-      "id": "Math.floor(Math.random() * 16777215).toString(16)"
+      "option4": { "value": "Eh", "id": "20" },
+      "option1": { "value": "he", "id": "21" },
+      "option2": { "value": "heh", "id": "22" },
+      "option3": { "value": "ehe", "id": "23" },
+      "id": "2"
     },
     {
       "question": "What is the capital of Brazil?",
-      "option1": { "value": "Brazil", "id": "16" },
-      "option4": { "value": "Arizona", "id": "17" },
-      "option2": { "value": "Ohio", "id": "18" },
-      "option3": { "value": "LA", "id": "19" },
-      "id": "Math.floor(Math.random() * 16777215).toString(16)"
+      "option1": { "value": "Brazil", "id": "30" },
+      "option4": { "value": "Arizona", "id": "31" },
+      "option2": { "value": "Ohio", "id": "32" },
+      "option3": { "value": "LA", "id": "33" },
+      "id": "3"
     },
     {
       "question": "Where is the capital of Iran?",
-      "option4": { "value": "Tehran", "id": "20" },
-      "option1": { "value": "Amol", "id": "21" },
-      "option2": { "value": "Isfahan", "id": "22" },
-      "option3": { "value": "Ankara", "id": "23" },
-      "id": "Math.floor(Math.random() * 16777215).toString(16)"
+      "option4": { "value": "Tehran", "id": "40" },
+      "option1": { "value": "Amol", "id": "41" },
+      "option2": { "value": "Isfahan", "id": "42" },
+      "option3": { "value": "Ankara", "id": "43" },
+      "id": "4"
     }
   ]
 }
