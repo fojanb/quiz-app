@@ -9,7 +9,6 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
   color: var(--clr-font);
-  min-height: 100vh;
   background-image: linear-gradient(to top, #226666 0%, #2c1944 100%);
 }
 .home {
