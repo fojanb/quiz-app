@@ -30,6 +30,7 @@ body {
   align-items: center;
   text-align: center;
   margin: 20px auto;
+  letter-spacing: 10px;
 }
 .wrapper {
   width: 700px;
@@ -131,6 +132,13 @@ body {
 #startBtn {
   border: 1px solid var(--clr-start);
   border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+#startBtn:hover{
+  color:var(--clr-bg);
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  background-color: #2a9d8f;
 }
 
 @media screen and (max-width: 930px) {
