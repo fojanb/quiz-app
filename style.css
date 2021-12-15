@@ -1,15 +1,17 @@
 :root {
-  --clr-font: #f2e9e4;
+  --clr-font: #b1a8a3;
   --clr-bg: #272640;
   --clr-card: #212f45;
   --clr-start: #1a6b75;
   --clr-option: #a16e43;
 }
 body {
-  box-sizing: border-box;
   font-family: sans-serif;
   color: var(--clr-font);
-  background-image: linear-gradient(to top, #226666 0%, #2c1944 100%);
+  background-color: rgb(19, 15, 15);
+  max-height: 50vh;
+  overflow-y: hidden;
+
 }
 .home {
   display: grid;
@@ -19,6 +21,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: hsl(182, 25%, 50%, 0.1);
+  border-radius: 10px;
 }
 .header {
   display: flex;
@@ -43,14 +47,12 @@ body {
   margin-top: 100px;
   text-align: center;
   color: var(--clr-font);
-  background-color: hsl(182, 25%, 50%, 0.05);
+  background-color: hsl(182, 25%, 50%, 0.1);
   padding-top: 50px;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
-  transition: all .25s;
+  transition: all 0.25s;
   transform: translateX(-200%);
   position: absolute;
-
 }
 .card.prev {
   z-index: 10;
@@ -125,6 +127,10 @@ body {
   border: none;
   color: #2a9d8f;
   cursor: pointer;
+}
+#startBtn {
+  border: 1px solid var(--clr-start);
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 930px) {
