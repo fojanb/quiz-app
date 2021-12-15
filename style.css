@@ -11,7 +11,6 @@ body {
   background-color: rgb(19, 15, 15);
   max-height: 50vh;
   overflow-y: hidden;
-
 }
 .home {
   display: grid;
@@ -23,6 +22,17 @@ body {
   text-align: center;
   background-color: hsl(182, 25%, 50%, 0.1);
   border-radius: 10px;
+}
+.home #startBtn {
+  border: 1px solid var(--clr-start);
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+.home #startBtn:hover {
+  color: var(--clr-bg);
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  background-color: #2a9d8f;
 }
 .header {
   display: flex;
@@ -113,6 +123,10 @@ body {
   margin: 0 auto;
   width: 50%;
 }
+.controls button:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
 .btn {
   display: flex;
   justify-content: center;
@@ -128,17 +142,6 @@ body {
   border: none;
   color: #2a9d8f;
   cursor: pointer;
-}
-#startBtn {
-  border: 1px solid var(--clr-start);
-  border-radius: 10px;
-  transition: 0.2s ease-in-out;
-}
-#startBtn:hover{
-  color:var(--clr-bg);
-  transform: scale(1.05);
-  transition: 0.2s ease-in-out;
-  background-color: #2a9d8f;
 }
 
 @media screen and (max-width: 930px) {
