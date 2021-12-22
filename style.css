@@ -8,7 +8,7 @@
 body {
   font-family: sans-serif;
   color: var(--clr-font);
-  background-color: rgb(19, 15, 15);
+  background-color: var(--clr-bg);
   max-height: 50vh;
   overflow-y: hidden;
 }
@@ -29,10 +29,9 @@ body {
   transition: 0.2s ease-in-out;
 }
 .home #startBtn:hover {
-  color: var(--clr-bg);
+  color: var(--clr-font);
   transform: scale(1.05);
   transition: 0.2s ease-in-out;
-  background-color: #2a9d8f;
 }
 .header {
   display: flex;
@@ -140,7 +139,7 @@ body {
   appearance: none;
   background: none;
   border: none;
-  color: #2a9d8f;
+  color: #277da1;
   cursor: pointer;
 }
 
