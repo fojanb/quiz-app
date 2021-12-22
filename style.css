@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: hsl(182, 25%, 50%, 0.1);
+  background-color: var(--clr-card);
   border-radius: 10px;
 }
 .home #startBtn {
@@ -57,7 +57,7 @@ body {
   margin-top: 100px;
   text-align: center;
   color: var(--clr-font);
-  background-color: hsl(182, 25%, 50%, 0.1);
+  background-color: var(--clr-card);
   padding-top: 50px;
   border-radius: 10px;
   transition: all 0.25s;
