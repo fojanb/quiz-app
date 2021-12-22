@@ -1,9 +1,9 @@
 :root {
-  --clr-font: #b1a8a3;
-  --clr-bg: #272640;
-  --clr-card: #212f45;
-  --clr-start: #1a6b75;
-  --clr-option: #a16e43;
+  --clr-font: #adbac7;
+  --clr-bg: #22272e;
+  --clr-card: #2d333b;
+  --clr-start: #277da1;
+  --clr-option: #855c8f;
 }
 body {
   font-family: sans-serif;
